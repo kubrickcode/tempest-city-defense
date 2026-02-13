@@ -6,6 +6,7 @@
   "workspaceFolder": "/workspaces/tempest-city-defense",
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/dotnet:2": { "version": "9.0" },
     "ghcr.io/guiyomh/features/just:0": {},
     "./local-features/node": {},
     "./local-features/python": {}
@@ -13,7 +14,13 @@
   "postCreateCommand": "bash /workspaces/tempest-city-defense/.devcontainer/post-create.sh",
   "customizations": {
     "vscode": {
-      "extensions": ["esbenp.prettier-vscode", "skellock.just"],
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "skellock.just",
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-dotnettools.csdevkit"
+      ],
       "settings": {
         "prettier.resolveGlobalModules": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
